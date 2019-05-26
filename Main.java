@@ -18,7 +18,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    Rectangle rectangle1 = new Rectangle(10, 20, -4, -9);
+        Rectangle rectangle1 = new Rectangle(10, 20, -4, -9);
         Rectangle rectangle2 = new Rectangle(10, 20);
         Rectangle rectangle3 = new Rectangle();
 
