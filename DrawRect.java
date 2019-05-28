@@ -3,24 +3,32 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package main;
+package lab3;
 
 /**
  *
- * @author Гоги
+ * @author Is_17_1
  */
 import java.text.MessageFormat;
 
 public class DrawRect extends Rectangle {
 
     private String outColor;
-
-    public void draw(String outColor) {
+    
+     public DrawRect(int x1, int y1, int x2, int y2, String outColor) {
+        super(x1, y1, x2, y2);
         this.outColor = outColor;
     }
-
-    @Override
-    public String toString() {
-        return MessageFormat.format("{0}, out: {1}", super.toString(), outColor);
+     public DrawRect() {
+        this(0, 0, 0, 0, "red");
     }
+
+    public void draw(String outColor) {
+        System.out.println(super.toString());
+        this.outColor = outColor;
+        System.out.println("Цвет границы: "+outColor);
+    }
+
+     
 }
+
