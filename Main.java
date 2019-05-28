@@ -3,8 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package main;
+package lab3;
 
+/**
+ *
+ * @author Is_17_1
+ */
 import java.util.Scanner;
 
 /**
@@ -32,13 +36,13 @@ public class Main {
         System.out.println(rectangle1.minSquare(rectangle2));
 
         try (Scanner s = new Scanner(System.in)) {
-            System.out.print("Введите цвет и нажмите Enter: ");
+            System.out.print("Введите цвет границы и нажмите Enter: ");
             String in = s.next();
-            System.out.print("Введите цвет и нажмите Enter: ");
+            System.out.print("Введите цвет тела и нажмите Enter: ");
             String out = s.next();
             ColoredRect coloredRect = new ColoredRect();
             coloredRect.draw(in, out);
-            System.out.println(coloredRect);
+            
         }
     }
     
